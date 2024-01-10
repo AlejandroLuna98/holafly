@@ -22,11 +22,9 @@ export const Home: React.FC<Props> = ({ token }) => {
   );
   const [inactiveCards, setInactiveCards] = useState<ICard[]>([]);
   const userName = useRef<string>('');
-
   const getData = async () => {
     try {
       if (!getItemFromLocalStorage('user')) {
-        console.log('entre');
         const [usersResponse, cardsResponse] = await Promise.all([
           api.get('/getUser', {
             headers: { Authorization: `Bearer ${token}` },

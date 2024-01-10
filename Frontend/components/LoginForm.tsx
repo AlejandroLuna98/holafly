@@ -11,8 +11,8 @@ import constants from '@/utils/constants';
 export const LoginForm = (): JSX.Element => {
   const router = useRouter();
 
-  const [email, setEmail] = useState<string>('user1@holafly.com');
-  const [password, setPassword] = useState<string>('holafly123');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string>('');
   const [isError, setIsError] = useState<boolean>(false);
   const [isLoader, setIsLoader] = useState<boolean>(false);
