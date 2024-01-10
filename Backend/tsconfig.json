@@ -4,7 +4,7 @@
     "module": "commonjs",
     "rootDir": "./app",
     "moduleResolution": "node",
-    "outDir": "./dist",
+    "outDir": "dist",
     "removeComments": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
