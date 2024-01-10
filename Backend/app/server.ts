@@ -9,9 +9,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
-app.use(cors({
-  origin: process.env.ORIGIN
-}));
+app.use(cors());
 
 connectDB();
 
