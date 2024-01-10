@@ -1,6 +1,7 @@
 import mongoose, { Document } from 'mongoose';
 
 interface ICard extends Document {
+  id: string;
   status: 'Expired' | 'Pending' | 'Active';
   dateStart: Date;
   dateEnd: Date | null;
