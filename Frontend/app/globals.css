@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-login{
+  background-image: url("/wp-content/plugins/holafly-features-frontend/assets/images/bg-instructions-page.svg");
+}
