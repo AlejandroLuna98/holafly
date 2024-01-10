@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 app.use(cors({
-  origin: '*',
+  origin: 'https://holafly-eight.vercel.app',
   methods: ['GET', 'POST', 'OPTIONS'],
 }));
 
